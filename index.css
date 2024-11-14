@@ -1,0 +1,141 @@
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://t3.ftcdn.net/jpg/09/67/79/46/360_F_967794655_qp4dIsDv1T1hqy9PrUu6FgR0MD3pRrH1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container for comments */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the comment card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on the card */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Text styling for the comment */
+.text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Reply link */
+.reply {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.reply:hover {
+  color: #0056b3;
+}
+
+/* Styling for the delete button */
+.delete {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ff4d4d;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.delete:hover {
+  color: #d12b2b;
+}
+
+/* Styling for the comment input box */
+.comment-details {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Input field and button for adding comments */
+.input {
+  height: 35px;
+  width: 70%;
+  padding: 0 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Nested comments style */
+.all-comment:not(:first-child) {
+  margin-left: 3rem; /* Indent nested comments */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .input {
+    width: 60%;
+  }
+
+  .btn {
+    padding: 6px 15px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+}
